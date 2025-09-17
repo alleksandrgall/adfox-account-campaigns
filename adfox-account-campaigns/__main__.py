@@ -65,7 +65,9 @@ def parse_campaign_value(value):
     """Парсит саму кампанию"""
     for field_name in [
                   'maxImpressions', 'maxClicks', 'maxImpressionsPerDay', 'maxClicksPerDay',
-                  'maxImpressionsPerHour', 'maxClicksPerHour', 'priority', 'status', 
+                  'maxImpressionsPerHour', 'maxClicksPerHour', 'impressionsHour', 
+                  'clicksHour' , 'impressionsToday' , 'clicksToday' , 'impressionsAll' , 
+                  'clicksAll' , 'priority', 'status', 
                   'level', 'cpm', 'cpc', 'kind_id', 'sectorID',
                   'rotationMethodID', 'trafficPercents', 'logicType']:
         value[field_name] = int(value[field_name]) if value[field_name] else 0
